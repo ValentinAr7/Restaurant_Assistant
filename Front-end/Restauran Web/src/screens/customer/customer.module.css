@@ -8,6 +8,7 @@
   height: 80%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   background-size: cover;
   background-position: right bottom;
 }
@@ -20,13 +21,6 @@
   text-align: center;
 }
 
-.splitLeft,
-.splitRight {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .centered {
   display: flex;
   flex-direction: column;
@@ -36,10 +30,11 @@
 
 .title {
   font-family: "MarckScripts", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 72px;
   color: var(--primary-color);
-  margin-top: 8%;
-  margin-bottom: 20%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   text-align: center;
 }
 
@@ -60,8 +55,8 @@
 }
 
 .centered .buttons {
-  margin-bottom: 4%;
-  width: 80%;
+  margin-bottom: 2%;
+  width: 30%;
   color: var(--primary-color);
   background-color: "none";
   font-weight: bold;
@@ -102,11 +97,14 @@
   .image {
     width: 50%;
   }
+
+  
 }
 
 @media (max-width: 480px) {
   .title {
     font-size: 64px;
+    margin-bottom: 20%;
   }
 
   .text {
@@ -131,5 +129,14 @@
   .splitLeft,
   .splitRight {
     width: 100%;
+  }
+
+  .centered .buttons {
+    margin-bottom: 4%;
+    width: 90%;
+    color: var(--primary-color);
+    background-color: "none";
+    font-weight: bold;
+    font-size: 20px;
   }
 }

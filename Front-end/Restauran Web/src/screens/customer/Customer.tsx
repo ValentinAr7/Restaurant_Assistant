@@ -38,11 +38,11 @@ const Customer: React.FC<CustomerProps> = ({ appUserId, appTableId }) => {
         className={styles.greyPart}
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <Box className={styles.splitLeft}>
+        <Box>
           <h2 className={styles.title}>Blankfactor</h2>
         </Box>
 
-        <Box className={styles.splitRight}>
+        <Box>
           <div className={styles.centered}>
             <MenuBtns
               startIcon={<RestaurantMenuIcon />}
